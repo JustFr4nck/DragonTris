@@ -3,8 +3,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="bodyDiv h-screen">
+  <div>
     <RouterLink to="/"/>
+    <RouterLink to="/choose"/>
     <RouterView />
   </div>
 </template>
