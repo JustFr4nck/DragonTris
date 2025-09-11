@@ -1,2 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Story+Script&display=swap');
 @import 'tailwindcss';
 
+.pepicons-pencil--hash {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cg fill='%23ff7a07' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M3 7.75a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5m0 5.5a.5.5 0 0 1 .5-.5h13a.5.5 0 1 1 0 1h-13a.5.5 0 0 1-.5-.5'/%3E%3Cpath d='M7.791 3.502a.5.5 0 0 1 .457.54l-1 12a.5.5 0 0 1-.996-.084l1-12a.5.5 0 0 1 .54-.456m5.5 0a.5.5 0 0 1 .456.54l-1 12a.5.5 0 0 1-.996-.084l1-12a.5.5 0 0 1 .54-.456'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bungee-spice-regular {
+  font-family: 'Bungee Spice', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navTextStyle{
+  background-image: linear-gradient(to bottom ,purple, blue) ;
+}
+
+.bodyDiv{
+
+  height: auto;
+  background-image: url("../../public/backgroundImg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.homeDiv{
+
+  border-radius: 3em;
+  background-color: rgb(0, 0, 255, 0.7);
+  color: white;
+  font-weight: 600;
+  box-shadow: blue 0px 0px 30px, rgb(86, 86, 255) 0px 0px 60px;
+  transition: box-shadow 0.3s ease;
+}
+
+.homeDiv:hover{
+
+  box-shadow: blue 0px 0px 50px, rgb(86, 86, 255) 0px 0px 80px;
+}
+
+.readyBtn{
+
+  background-image: linear-gradient(to bottom, orange, orangered);
+  border-radius: 2em;
+}
+
+
+.readyBtn:active{
+
+  background: orangered;
+}

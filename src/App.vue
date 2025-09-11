@@ -3,7 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <RouterLink to="/">Home</RouterLink>
-
-  <RouterView />
+  <div class="bodyDiv h-screen">
+    <RouterLink to="/"/>
+    <RouterView />
+  </div>
 </template>
