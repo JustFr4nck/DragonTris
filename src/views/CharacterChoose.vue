@@ -50,7 +50,7 @@ function play() {
     return
   }
 
-  store.playerNames(nik1, nik2);
+  store.playerNames(nik1.value, nik2.value);
 
   //apre la finestra per il game
   router.push('/game')

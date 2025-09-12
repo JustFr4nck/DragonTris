@@ -6,21 +6,18 @@
     </div>
 
     <div class="basis-1/3 flex flex-col items-center">
-      <div class="flex flex-row items-center justify-center border-orange-400 border-solid border-2 mt-30">
-        <div>
-          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
-          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
-          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
-        </div>
-        <div>
-          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
-          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
-          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
-        </div>
-        <div>
-          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
-          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
-          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
+      <div
+        class="flex flex-row items-center justify-center border-orange-400 border-solid border-2 mt-30"
+      >
+        <div v-for="(row, iRow) in matrix" :key="iRow">
+          <div
+            v-for="(col, iCol) in row"
+            :key="iCol"
+            class="internalGrid"
+            @click="addImg(iRow, iCol)"
+          >
+            <img v-if="col" :src="col" alt="" />
+          </div>
         </div>
       </div>
       <div>
@@ -41,32 +38,40 @@
 
 <script setup>
 import { playersData } from '../../data/store'
-import { resetWindow, putImg, checkIsVoid, nikWin, colorTurn, checkAlgo, whoWin, winFlag} from '../lib/script.js';
-import { ref } from 'vue';
+import {
+  resetWindow,
+  putImg,
+  checkIsVoid,
+  nikWin,
+  colorTurn,
+  checkAlgo,
+  whoWin,
+  winFlag,
+} from '../lib/script.js'
+import { ref } from 'vue'
 
-const img = ref('');
-const p1Img = ref('/gokuIcon.png');
-const p2Img = ref('/vegetaIcon.png')
+const store = playersData()
 
-let matrix = [
-  [0, 0, 0],
-  [0, 0, 0],
-  [0, 0, 0],
-];
+const p1Img = ref('/gokuIcon.png')
+const p2Img = ref('/majin_vegeta.png')
 
-function addImg(){
 
-    if(putImg() === "tP1"){
 
-       img.value = p1Img.value;
-       
-    }
-    else{
-        img.value = p2Img.value;
-    }
+let matrix = ref([
+  [null, null, null],
+  [null, null, null],
+  [null, null, null],
+])
 
+function addImg(row, col) {
+  if (putImg() === 'tP1') {
+    matrix.value[row][col] = p1Img.value
+  } else {
+    matrix.value[row][col] = p2Img.value
+  }
 }
 
 
-const store = playersData()
+
+console.log((store.player1))
 </script>
