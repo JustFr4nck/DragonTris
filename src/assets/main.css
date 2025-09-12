@@ -60,3 +60,10 @@
   background-image: linear-gradient(to right, red, blue);
 }
 
+.internalGrid{
+    background-color: rgb(255, 220, 177);
+     border: orange solid 2.5px;
+     width: 150px;
+     height: 150px;
+     align-content: center;
+}
