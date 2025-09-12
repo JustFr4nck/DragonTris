@@ -9,18 +9,18 @@
       <div class="flex flex-row items-center justify-center border-orange-400 border-solid border-2 mt-30">
         <div>
           <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
-          <div class="internalGrid"></div>
-          <div class="internalGrid"></div>
+          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
+          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
         </div>
         <div>
-          <div class="internalGrid"></div>
-          <div class="internalGrid"></div>
-          <div class="internalGrid"></div>
+          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
+          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
+          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
         </div>
         <div>
-          <div class="internalGrid"></div>
-          <div class="internalGrid"></div>
-          <div class="internalGrid"></div>
+          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
+          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
+          <div @click="addImg"  class="internalGrid"> <img v-if="img"  :src="img" alt=""></div>
         </div>
       </div>
       <div>
@@ -45,9 +45,8 @@ import { resetWindow, putImg, checkIsVoid, nikWin, colorTurn, checkAlgo, whoWin,
 import { ref } from 'vue';
 
 const img = ref('');
-
-const p1Img = "../../public/images/gokuIcon.png";
-const p2Img = "../../public/images/vegetaIcon.png";
+const p1Img = ref('/gokuIcon.png');
+const p2Img = ref('/vegetaIcon.png')
 
 let matrix = [
   [0, 0, 0],
@@ -59,11 +58,11 @@ function addImg(){
 
     if(putImg() === "tP1"){
 
-       img.value = p1Img;
+       img.value = p1Img.value;
        
     }
     else{
-        img.value = p2Img
+        img.value = p2Img.value;
     }
 
 }

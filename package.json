@@ -18,6 +18,8 @@
     "@iconify/vue": "^5.0.0",
     "@tailwindcss/vite": "^4.1.13",
     "pinia": "^3.0.3",
+    "pinia-plugin-persistedstate": "^4.5.0",
+    "pinia-plugin-persistedstate-2": "^2.0.31",
     "tailwindcss": "^4.1.13",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
