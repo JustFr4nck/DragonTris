@@ -54,3 +54,9 @@
 
   background: orangered;
 }
+
+.chooseBody{
+
+  background-image: linear-gradient(to right, red, blue);
+}
+
