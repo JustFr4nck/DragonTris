@@ -98,6 +98,3 @@ export function nikWin() {
 }
 
 export { winFlag };
-
-
-//import { resetWindow, putImg, checkIsVoid, nikWin, colorTurn, checkAlgo, whoWin, winFlag} from "./assets/scriptFunction/logicScript.js";
