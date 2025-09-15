@@ -6,6 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <div>
     <RouterLink to="/"/>
     <RouterLink to="/choose"/>
+    <RouterLink to="/game"/>
     <RouterView />
   </div>
 </template>

@@ -41,6 +41,8 @@ const nik1 = ref('')
 const nik2 = ref('')
 
 function play() {
+  store.score.player1 = 0;
+  store.score.player2 = 0;
   // controlli che le caselle vengano utilizzate correttamante
   if (nik1.value === nik2.value && nik1.value !== '' && nik2.value !== '') {
     alert('ERROR: nicknames must be different!!!')
