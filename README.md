@@ -32,14 +32,6 @@ Questo progetto utilizza le seguenti tecnologie:
 
 ---
 
-## 📸 Anteprima del gioco
-
-🎴 Griglia 3x3 stile Tris  
-⚔️ Player 1 ➝ ![Goku](public/gokuIcon.png)  
-⚔️ Player 2 ➝ ![Majin Vegeta](public/majin_vegeta.png)  
-
----
-
 ## 🚀 Installazione
 
 ```bash
