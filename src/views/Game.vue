@@ -5,7 +5,7 @@
         {{ store.player1 }}
       </h3>
       <img src="../../public/gokuIcon.png" class="w-80" alt="" />
-      <h4>SCORE: {{ store.score.player1 }}</h4>
+      <h4 class="rubik-bubbles-regular">SCORE: {{ store.score.player1 }}</h4>
     </div>
 
     <div class="basis-1/3 flex flex-col items-center">
@@ -33,7 +33,7 @@
       </div>
 
       <div class="flex justify-center mt-20">
-        <h2>{{ winner }}</h2>
+        <h2 class="bungee-spice-regular text-5xl">{{ winner }}</h2>
       </div>
     </div>
 
@@ -42,7 +42,7 @@
         {{ store.player2 }}
       </h3>
       <img src="../../public/majin_vegeta.png" class="w-80" alt="" />
-      <h4>SCORE: {{ store.score.player2 }}</h4>
+      <h4 class="rubik-bubbles-regular">SCORE: {{ store.score.player2 }}</h4>
     </div>
   </div>
 </template>
