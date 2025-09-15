@@ -1,41 +1,42 @@
-# FranckTrisVue
+# 🐉 Dragon Ball Tic-Tac-Toe 🎮✨
 
-This template should help get you started developing with Vue 3 in Vite.
+Un gioco del **Tris** (Tic-Tac-Toe) ispirato a **Dragon Ball Z** ⚡.  
+Sfida i tuoi amici impersonando **Goku 🟦** contro **Majin Vegeta 🟥** e scopri chi sarà il vero vincitore del torneo! 💥
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🛠️ Tecnologie usate
 
-## Customize configuration
+Questo progetto utilizza le seguenti tecnologie:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- ⚡ **Vue 3** → Framework frontend moderno con Composition API  
+- 🍍 **Pinia** → Gestione dello stato globale dei giocatori e punteggi  
+- 🎨 **Tailwind CSS** → Stile moderno, responsive e accattivante  
+- 🏗️ **Vite** → Build veloce e hot-reload  
+- 🧰 **JavaScript ES6+** → Logica di gioco  
+- 🖼️ **Icone personalizzate** → Goku e Majin Vegeta  
+- 🔍 **Vue Devtools** → Debug dello stato reattivo  
+- 🎮 **HTML5 & CSS3** → Layout e styling della pagina  
+- 🌐 **Responsive Design** → Gioco utilizzabile anche su mobile 📱
 
-## Project Setup
+---
 
-```sh
+## ✨ Funzionalità
+
+- 👥 **2 giocatori**: Player 1 (Goku) vs Player 2 (Majin Vegeta)  
+- 🖼️ Icone personalizzate per ogni giocatore  
+- 🏆 **Sistema di punteggio** dinamico  
+- 🔄 **Bottone Reset** per rigiocare immediatamente  
+- 🟩 Evidenzia il giocatore di turno  
+- 🔔 Messaggi di vittoria / pareggio divertenti
+
+---
+
+## 🚀 Installazione
+
+```bash
+git clone https://github.com/tuo-username/dragonball-tris.git
+cd dragonball-tris
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
