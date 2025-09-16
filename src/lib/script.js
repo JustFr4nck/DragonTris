@@ -73,8 +73,9 @@ export function whoWin(result) {
     return 'p2'
   } else if (result === 'tie') {
     return 'TIE!!!'
-  } else {
-    return null
+  }
+  else{
+    return null;
   }
 }
 

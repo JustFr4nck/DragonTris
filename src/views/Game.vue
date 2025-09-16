@@ -33,7 +33,7 @@
       </div>
 
       <div class="flex justify-center mt-20">
-        <h2 class="bungee-spice-regular text-5xl">{{ winner }}</h2>
+        <h2 class="bungee-spice-regular text-5xl text-center">{{ winner }}</h2>
       </div>
     </div>
 
@@ -90,7 +90,7 @@ function addImg(row, col) {
   } else if (whoWin(result) === 'p2') {
     winner.value = store.player2 + ' IS THE WINNER!!!!'
     store.score.player2++;
-  } else {
+  } else if(whoWin === 'tie') {
     winner.value = 'TIE!!!'
   }
 }
